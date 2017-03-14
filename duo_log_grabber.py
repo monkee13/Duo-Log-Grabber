@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''
 Grabs the administration and authentication logs from the Duo Security
 API and sends CEF-compliant syslog messages.
