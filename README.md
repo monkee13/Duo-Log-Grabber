@@ -31,4 +31,4 @@ This is the most current CEF definition, but requires a Protect724 login.
 - https://protect724.arcsight.com/docs/DOC-1613
 
 This is slightly older, but good enough:
-- http://mita-tac.wikispaces.com/file/view/CEF+White+Paper+071709.pdf
+- https://www.protect724.hpe.com/servlet/JiveServlet/downloadBody/1072-102-9-20354/CommonEventFormatv23.pdf
