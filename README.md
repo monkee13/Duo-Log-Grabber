@@ -24,11 +24,9 @@ The following modules are used:
 - duo_client (2.1) - https://github.com/duosecurity/duo_client_python
 - loggerglue (1.0) - https://pypi.python.org/pypi/loggerglue/1.0
 
-Only tested on Python 2.7.6. 
+Tested on Python 2.7.12
 
 # Resources
-This is the most current CEF definition, but requires a Protect724 login.
-- https://protect724.arcsight.com/docs/DOC-1613
 
-This is slightly older, but good enough:
-- https://www.protect724.hpe.com/servlet/JiveServlet/downloadBody/1072-102-9-20354/CommonEventFormatv23.pdf
+ArcSight Common Event Format (CEF) Guide:
+- https://www.protect724.hpe.com/docs/DOC-1072
