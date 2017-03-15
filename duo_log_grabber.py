@@ -1,25 +1,15 @@
 #!/usr/bin/env python
 '''
-Grabs the administration and authentication logs from the Duo Security
-API and sends CEF-compliant syslog messages.
-
-Error/Debug Logs:
-Setting the 'DEBUG' flag in the conf.ini file prints all the
-CEF messages to a file specified in 'DEBUG_FILE'. By default,
-this is written to 'debug.log'. All exceptions  are logged to
-'exceptions.log'.
-
-Logging format (CEF):
-This is the ArcSight log format and is comprised of a syslog prefix,
-a header, and an extension, as shown here:
-
-    Jan 18 11:07:53 host CEF:Version|Device Vendor|
-    Device Product|Device Version|Signature ID|Name|Severity|[Extension]
-
-    Sep 19 08:26:10 host CEF:0|Security|threatmanager|1.0|100|worm
-    successfully stopped|10|src=10.0.0.1 dst=2.1.2.2 spt=1232
-
+    Grabs the administration and authentication logs from the Duo Security
+    API and sends CEF-compliant syslog messages.
+    
+    Error/Debug Logs:
+    Setting the 'DEBUG' flag in the conf.ini file prints all the
+    CEF messages to a file specified in 'DEBUG_FILE'. By default,
+    this is written to 'debug.log'. All exceptions  are logged to
+    'exceptions.log'.
 '''
+
 from __future__ import print_function
 from datetime import datetime
 import calendar
