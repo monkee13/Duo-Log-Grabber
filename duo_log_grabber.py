@@ -89,6 +89,10 @@ def get_logs(proxy=None, proxy_port=None):
             'rt=': str(entry['timestamp'] * 1000),
             'description=': str(entry.get('description')),
             'dhost=': entry['host'],
+            'cs4Label=': 'action',
+            'cs4=': entry['action'],
+            'cs5Label=': 'enduser',
+            'cs5=': entry['object'],
         }
 
         log_to_cef(entry['eventtype'], entry['action'], **extension)
@@ -106,7 +110,7 @@ def get_logs(proxy=None, proxy_port=None):
             'cs1=': str(entry['new_enrollment']),
             'cs2Label=': 'factor',
             'cs2=': entry['factor'],
-            'ca3Label=': 'integration',
+            'cs3Label=': 'integration',
             'cs3=': entry['integration'],
         }
 
